@@ -47,6 +47,7 @@ namespace WordleSolver
             }else{
                 return null;
             }
+            return null;
         }
         // public List<string> Words;
     }
