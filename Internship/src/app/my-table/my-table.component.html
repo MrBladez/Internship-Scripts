@@ -1,0 +1,58 @@
+<div>
+  <div class="row">
+    <div class="col-8">
+        <div class = "Search-Container">
+            <input type="text" [(ngModel)]="searchText" (keydown.enter)="search(searchText)" placeholder = "Search Item">
+        </div>
+      </div>
+      <ul *ngIf="IsSearchPerformed">
+        <li *ngFor="let product of filteredProducts">
+            {{ product.title }}
+            <a [href] = product.url>{{product.brand}}</a>
+            <img [src]=product.main_image alt="{{ product.title }} image" width="100">
+            <p>{{product.description}}</p>
+        </li>
+      </ul>  
+    <div class="col-4">
+      <h2>Sorted Items</h2>
+      <ul>
+        <ng-container *ngFor="let item of products">
+          <li *ngIf="item.sub_category_1 === 'Pantry'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Meat & Seafood'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Deli'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Wine, Beer & Liquor'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Dairy'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Snacks'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Beverages'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Bakery & Bread'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Breakfast & Cereal'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Candy'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+          <li *ngIf="item.sub_category_1 === 'Frozen Foods'">
+            {{ item.sub_category_1 }} - {{ item.title }}
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+  
+  
