@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Transactions;
 
 namespace GradeBook
 {
@@ -8,9 +9,17 @@ namespace GradeBook
         static void Main(string[] args)
         {
             var book = new Book("Austin's Grade Book");
-            book.AddGrade(89.19);
-            book.AddGrade(45.95);
-            book.AddGrade(69.37);
+            while(true)
+            {
+                Console.WriteLine("Enter a number or press 'q' to quit");
+                var input = Console.ReadLine();
+                if (input == "q")
+                {
+                    break;
+                }
+                var Grade = double.Parse(input);
+                book.AddGrade(Grade);
+            }
             var stats = book.GetStatistics();
             
             Console.WriteLine($"The average grade is {stats.Average:N1}");
