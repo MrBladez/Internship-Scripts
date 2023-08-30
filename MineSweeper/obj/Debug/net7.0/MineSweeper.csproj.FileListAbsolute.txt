@@ -1,0 +1,14 @@
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\bin\Debug\net7.0\MineSweeper.exe
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\bin\Debug\net7.0\MineSweeper.deps.json
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\bin\Debug\net7.0\MineSweeper.runtimeconfig.json
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\bin\Debug\net7.0\MineSweeper.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\bin\Debug\net7.0\MineSweeper.pdb
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.AssemblyInfoInputs.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.AssemblyInfo.cs
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\refint\MineSweeper.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.pdb
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\MineSweeper.genruntimeconfig.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\MineSweeper\obj\Debug\net7.0\ref\MineSweeper.dll
