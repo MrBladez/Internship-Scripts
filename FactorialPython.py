@@ -1,0 +1,1 @@
+userNum  = int(input("Enter a number to get a factorial: "))
