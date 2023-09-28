@@ -1,2 +1,2 @@
 # Internship-Scripts
-Coding stuff for Internship
+Coding Stuff For Internship and For Fun
