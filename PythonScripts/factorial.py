@@ -1,9 +1,8 @@
-def factorialNumber(num):
-    if num == 1:
-        return num
-    else:
-        return num * factorialNumber(num-1)
-userInput = (input("Enter a number to get the factorial: "))
-if userInput == 'q':
-    
-print(factorialNumber(userNum))
+def findFactorial(int):
+    if(int == 1):
+        return int
+    return int * findFactorial(int)
+
+factorialNum = int(input("Enter a number to find the factorial: "))
+print("Your factorial answer is: ")
+print(findFactorial(factorialNum))
