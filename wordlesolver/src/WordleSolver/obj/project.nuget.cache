@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nXyAJ5tecz5DcbGeINgTBdBJZ98Z2qYQkVb8w37VQQnb8I3yXLjtnaW+nLq1OtxNz97G86m+R3lmh1rSDf72dg==",
+  "dgSpecHash": "DHP3lA2b4Gl8IStOuESxMfNTf3xR5egAzV982TlfqmyToK0SgYvgIZBZ04Pwm91yZtZ6W+R+NC6RGBejY1RKYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\austi\\wordlesolver\\src\\WordleSolver\\WordleSolver.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\wordlesolver\\src\\WordleSolver\\WordleSolver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
