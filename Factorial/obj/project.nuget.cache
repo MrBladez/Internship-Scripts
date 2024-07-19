@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "G+3rWpTxTy9LqA0Zh3Uf0iTnGxa9GfVGmdXhsJBFDNl6gSKth3P15k8ApBmXGw3q5FL4fIwqqWdMpQiJ1apTFw==",
+  "dgSpecHash": "kR65RmfP73FL0nog5geWdX8KLDEU2tlyykyKuKnVKr5ITPR4tfDtlKiOYK6sXBHep2Bocz/7skSJIJ4ceQtvCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\Factorial\\Factorial.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

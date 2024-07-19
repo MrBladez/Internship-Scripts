@@ -12,3 +12,4 @@ C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\De
 C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net7.0\SplitSalaries.pdb
 C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net7.0\SplitSalaries.genruntimeconfig.cache
 C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net7.0\ref\SplitSalaries.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net7.0\SplitSalaries.sourcelink.json

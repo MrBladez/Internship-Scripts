@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fCEYdN+vr5DQQ95EXiDOY+cgLZmCpmUD4/NHamPjZ7o20XqA17cOUYwKNhl1F8ZYRdJcvCRmvvw1atIeSLjHrg==",
+  "dgSpecHash": "2CP5iLxzimoFGDjwBc7fJCUBDwSA3quh5csqjCL0/fNry56FUlR7YbaS7hdTWP3NLuyd9LJ/y7wodT1PZaUgjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\MineSweeper\\MineSweeper.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,15 @@
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\bin\Debug\net8.0\SplitSalaries.exe
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\bin\Debug\net8.0\SplitSalaries.deps.json
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\bin\Debug\net8.0\SplitSalaries.runtimeconfig.json
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\bin\Debug\net8.0\SplitSalaries.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\bin\Debug\net8.0\SplitSalaries.pdb
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.AssemblyInfoInputs.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.AssemblyInfo.cs
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.csproj.CoreCompileInputs.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.sourcelink.json
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\refint\SplitSalaries.dll
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.pdb
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\SplitSalaries.genruntimeconfig.cache
+C:\Users\austi\OneDrive\Documents\GitHub\Internship-Scripts\SplitSalaries\obj\Debug\net8.0\ref\SplitSalaries.dll
