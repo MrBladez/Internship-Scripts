@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2CP5iLxzimoFGDjwBc7fJCUBDwSA3quh5csqjCL0/fNry56FUlR7YbaS7hdTWP3NLuyd9LJ/y7wodT1PZaUgjQ==",
+  "dgSpecHash": "mxVv5NWbTfRCmIK91GD3+Z9UJH1fZ0zsysPgJeS0vp9ppXHaWC8D049FaBVc4mFTI0ovRJ0qPw+bs5kgNHh9WA==",
   "success": true,
   "projectFilePath": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\MineSweeper\\MineSweeper.csproj",
+  "dgSpecHash": "mxVv5NWbTfRCmIK91GD3+Z9UJH1fZ0zsysPgJeS0vp9ppXHaWC8D049FaBVc4mFTI0ovRJ0qPw+bs5kgNHh9WA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\MineSweeper\\MineSweeper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",

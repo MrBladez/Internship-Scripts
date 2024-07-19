@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj": {}
+    "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+    "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectPath": "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\austi\\OneDrive\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\obj\\",
+        "outputPath": "C:\\Users\\austi\\Documents\\GitHub\\Internship-Scripts\\gradebook\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\austi\\AppData\\Roaming\\NuGet\\NuGet.Config"
