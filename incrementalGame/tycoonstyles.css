@@ -1,0 +1,41 @@
+ /* Place your CSS styles in this file */
+
+ .Startbtn{
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    width: 100vw;
+    height: 100vh;
+    font-size: 200px;
+}
+ .TheButton{ 
+    width: 25vw;
+    height: 22vh;
+    font-size: 30px;
+}
+button {
+    background-color: #ccc;
+    border: 2px solid #000000;
+    font-size: 15px;
+}
+#UpgradeButtons {
+    position:absolute;
+    right: 5vh;
+    top: 5vw;
+    width: 4vw;
+    height: 4vh;
+}
+#TheStore{
+    position: absolute;
+    text-align: center;
+    left:47vw;
+    top:5vh;
+}
+#StoreBttns {
+    position: absolute;
+    left: 37vw;
+    top: 20vh;
+}
+#TheStats {
+    font-size: x-large;
+}
