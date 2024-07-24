@@ -18,7 +18,7 @@ function AddMinerBtn() {
     };
     Container.appendChild(button);
     let Paragraph = document.createElement("p");
-    Paragraph.textContent = "Each Miner gives 1% coins per second";
+    Paragraph.textContent = "Each Miner gives 1 coin per second";
     Paragraph.id = "MinerDescript";
     button.appendChild(Paragraph);
 }
@@ -57,7 +57,7 @@ function NewMouse()
         // Paragraph.textContent = `Each Mouse gives ${MouseMulti} additonal ${CoinsInDesc} per click`
         document.getElementById("Mouse").innerHTML = `1 Mouse for ${MouseCost} coins`;
         let Paragraph = document.createElement("p");
-        let message = `Each Mouse gives ${MouseMulti} additonal ${CoinsInDesc} per click`;
+        let message = `Each Mouse gives ${MouseMulti * prestigeMulti} additonal ${CoinsInDesc} per click`;
         Paragraph.textContent = message;
         Paragraph.id = "MouseDescript";
         button.appendChild(Paragraph);
@@ -88,15 +88,15 @@ function NewMiner()
         resetList[0] -= MinerCost;
         MinerCost += MinerCost / 10;
         MinerCost = Math.round(10 * MinerCost) / 10;
-        document.getElementById("Miner").innerHTML = `1 Miner for ${MinerCost} coins`;
+        button.innerHTML = `1 Miner for ${MinerCost} coins`;
         let Paragraph = document.createElement("p");
-        /*if (MinerMulti >= 2)
+        if (MinerMulti >= 2)
         {
-            CoinsInDesc = "resetList[0]";
+            CoinsInDesc = "Coins";
         }else{
             CoinsInDesc = "Coin";
-        }*/
-        let message = `Each Miner gives ${MinerMulti}% coins per second`;
+        }
+        let message = `Each Miner gives ${MinerMulti * prestigeMulti} ${CoinsInDesc} per second`;
         Paragraph.textContent = message;
         Paragraph.id = "MinerDescript";
         button.appendChild(Paragraph);
@@ -112,7 +112,7 @@ function UpgradeMouse(Cost, ID)
         MouseMulti *= 2;
         resetList[0] -= Cost;
         ButtonRemove(ID);
-        document.getElementById("MouseDescript").textContent = `Each Mouse gives ${MouseMulti} additonal coins per click`;
+        document.getElementById("MouseDescript").textContent = `Each Mouse gives ${MouseMulti * prestigeMulti} additonal coins per click`;
     }
 }
 function UpgradeMiner()
@@ -133,7 +133,7 @@ function UpgradeMiner()
                 MinerMulti *= 2;
                 resetList[0] -= MinerUpgrade;
                 MinerUpgrade *= 4;
-                document.getElementById("MinerDescript").textContent = `Each Miner gives ${MinerMulti}% coins per second`;
+                document.getElementById("MinerDescript").textContent = `Each Miner gives ${MinerMulti * prestigeMulti} coins per second`;
                 Update();
                 UpgradeMiner();
             }
@@ -151,11 +151,32 @@ function addAutoUpgrade(){
         if(resetList[0] >= 100){
             resetList[0] -= 100;
             ButtonRemove("autoClick");
-            setInterval( function (){
-                ButtonClicked();
-            }, 500);
+            autoClick = true;
             Update();
         }
     }
     Container.appendChild(button);
+}
+function addPrestigeBtn(){
+    let Container = document.getElementById("StoreBttns");
+    let button = document.createElement("button");
+    button.innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+    button.id = "PrestigeUp";
+    button.className = "btn btn-primary";
+    button.onclick = function () {
+      upPrestige();
+    };
+    Container.appendChild(button);
+    let Paragraph = document.createElement("p");
+    Paragraph.textContent = "Each prestige upgrade doubles miner and mouse productivity";
+    Paragraph.id = "PrestigeDescript";
+    button.appendChild(Paragraph);
+}
+function upPrestige(){
+    if(resetList[1] >= PrestigeUpCost){
+        prestigeMulti *= 2;
+        resetList[1] -= PrestigeUpCost;
+        PrestigeUpCost *= 16;
+        document.getElementById("PrestigeUp").innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+    }
 }

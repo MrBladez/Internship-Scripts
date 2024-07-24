@@ -11,7 +11,7 @@ function createPrestigeBtn()
     Container.appendChild(button);
     setInterval(function () {
         document.getElementById("prestigeReset").innerText = `Reset all coins for ${prestigeGain} copper`;
-    }, 1000);
+    }, 10);
 }
 function resetPrestige(resetIndex)
 {
@@ -35,13 +35,30 @@ function resetPrestige(resetIndex)
         mouseUpsBought = 0;
         resetList[1] += prestigeGain;
         hasPrestiged = true;
-        ButtonRemove("UpgradeMouse");
-        ButtonRemove("UpgradeMiner");
+        autoClick = false;
+        while (document.getElementById("UpgradeButtons").lastElementChild.id != "prestigeReset")
+        {
+            let button = document.getElementById("UpgradeButtons").lastElementChild.id;
+            ButtonRemove(button)
+        }
+        addAutoUpgrade();
+        let buttonMiner = document.getElementById("Miner");
+        let buttonMouse = document.getElementById("Mouse");
+        let mineDescript = `Each Miner gives ${MinerMulti} coin per second`;
+        let miceDescript = `Each Mouse gives ${MouseMulti} additonal coin per click`;
+        document.getElementById("mouseNum").innerHTML = `you have ${Mouse} Mice. `;
+        buttonMouse.innerHTML = `1 Mouse for ${MouseCost} coins`;
+        document.getElementById("minerNum").innerHTML = `you have ${Miner} Miners. `;
+        buttonMiner.innerHTML = `1 Miner for ${MinerCost} coins`;
+        let ParagraphMiner = document.createElement("p");
+        ParagraphMiner.textContent = mineDescript;
+        ParagraphMiner.id = "MinerDescript";
+        buttonMiner.appendChild(ParagraphMiner);
+        let ParagraphMouse = document.createElement("p");
+        ParagraphMouse.textContent = miceDescript;
+        ParagraphMouse.id = "MouseDescript";
+        buttonMouse.appendChild(ParagraphMouse);
+        Update();
     }
-    document.getElementById("mouseNum").innerHTML = `you have ${Mouse} Mice. `;
-    document.getElementById("MouseDescript").textContent = `Each Mouse gives ${MouseMulti} additonal coins per click`;
-    document.getElementById("Mouse").innerHTML = `1 Mouse for ${MouseCost} coins`;
-    document.getElementById("minerNum").innerHTML = `you have ${Miner} Miners. `;
-    document.getElementById("Miner").innerHTML = `1 Miner for ${MinerCost} coins`;
-    document.getElementById("MinerDescript").textContent = `Each Miner gives ${MinerMulti}% coins per second`;
+    
 }

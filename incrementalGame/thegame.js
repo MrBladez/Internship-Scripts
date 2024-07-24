@@ -4,8 +4,11 @@ var MouseMulti = 1;
 var Mouse = 1;
 let resetList = [0, 0, 0];
 let prestigeGain = Math.round(resetList[0] ** (1/5))
-let resetCost = [1000, 0, 0]
+let resetCost = [10, 0, 0]
 let hasPrestiged = false;
+let autoClick = false;
+let PrestigeUpCost = 1;
+let prestigeMulti = 1;
 function Start() {
 
   ButtonRemove("START");
@@ -18,9 +21,14 @@ function Start() {
   addAutoUpgrade();
   createPrestigeBtn();
   setInterval(function () {
-    resetList[0] *= 1 + Miner * MinerMulti / 100;
+    resetList[0] += (Miner * MinerMulti * prestigeMulti);
     Update();
   }, 1000);
+  setInterval(function () {
+    if(autoClick){
+      ButtonClicked();
+    }
+  }, 500);
 }
 
 
@@ -58,6 +66,6 @@ function AddClickBtn() {
   Container.appendChild(button);
 }
 function ButtonClicked() {
-  resetList[0] += Mouse * MouseMulti;
+  resetList[0] += Mouse * MouseMulti * prestigeMulti;
   Update();
 }
