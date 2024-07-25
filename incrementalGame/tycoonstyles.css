@@ -35,6 +35,9 @@ button {
     position: absolute;
     left: 37vw;
     top: 20vh;
+    right: 37vw;
+    width: 10vw;
+    height: 10vh;
 }
 #TheStats {
     font-size: x-large;

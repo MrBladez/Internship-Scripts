@@ -5,7 +5,7 @@ let MouseUpgrade = 250;
 let mouseUpCost = 5;
 let minerUpCost = 5;
 let minerUpsBought = 0;
-let mouseUpsBought = 0;
+let mouseUpsBought = 1;
 
 function AddMinerBtn() {
     let Container = document.getElementById("StoreBttns");
@@ -49,12 +49,10 @@ function NewMouse()
         MouseCost = Math.round(10 * MouseCost) / 10;
         if (MouseMulti >= 2)
         {
-            Coinsin = "resetList[0]";
+            Coinsin = "coins";
         }else{
             CoinsInDesc = "coin";
         }
-        // var Paragraph = document.getElementById("MouseDescript");
-        // Paragraph.textContent = `Each Mouse gives ${MouseMulti} additonal ${CoinsInDesc} per click`
         document.getElementById("Mouse").innerHTML = `1 Mouse for ${MouseCost} coins`;
         let Paragraph = document.createElement("p");
         let message = `Each Mouse gives ${MouseMulti * prestigeMulti} additonal ${CoinsInDesc} per click`;
@@ -160,7 +158,7 @@ function addAutoUpgrade(){
 function addPrestigeBtn(){
     let Container = document.getElementById("StoreBttns");
     let button = document.createElement("button");
-    button.innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+    button.innerHTML = `1 monitor for ${PrestigeUpCost} copper`;
     button.id = "PrestigeUp";
     button.className = "btn btn-primary";
     button.onclick = function () {
@@ -177,6 +175,13 @@ function upPrestige(){
         prestigeMulti *= 2;
         resetList[1] -= PrestigeUpCost;
         PrestigeUpCost *= 16;
-        document.getElementById("PrestigeUp").innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+        let button = document.getElementById("PrestigeUp");
+        button.innerHTML = `1 monitor for ${PrestigeUpCost} copper`;
+        let Paragraph = document.createElement("p");
+        Paragraph.textContent = "Each prestige upgrade doubles miner and mouse productivity";
+        Paragraph.id = "PrestigeDescript";
+        button.appendChild(Paragraph);
+        document.getElementById("MinerDescript").textContent = `Each Miner gives ${MinerMulti * prestigeMulti} coins per second`;
+        document.getElementById("MouseDescript").textContent = `Each Mouse gives ${MouseMulti * prestigeMulti} additonal coins per click`;
     }
 }

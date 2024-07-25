@@ -12,6 +12,7 @@ function Update()
     }
     document.getElementById("currency").innerHTML = message;
     prestigeGain = Math.floor((resetList[0]/resetCost[0]) ** (1/2));
+    document.getElementById("prestigeReset").innerText = `Reset all coins for ${prestigeGain} copper`;
 }
 function ButtonRemove(n)
 {
