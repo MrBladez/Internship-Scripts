@@ -1,5 +1,5 @@
 var MinerCost = 5;
-var MouseCost = 2;
+var MouseCost = 25*(2**(Mouse-1));
 let MinerUpgrade = 250;
 let MouseUpgrade = 250;
 let mouseUpCost = 5;
@@ -45,7 +45,7 @@ function NewMouse()
         let CoinsInDesc;
         Mouse++;
         resetList[0] -= MouseCost;
-        MouseCost = MouseCost * 2;
+        MouseCost = MouseCost * (1.8**(Mouse-1));
         MouseCost = Math.round(10 * MouseCost) / 10;
         if (MouseMulti >= 2)
         {
