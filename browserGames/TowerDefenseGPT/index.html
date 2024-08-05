@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <button onclick="selectTower('basic')">Basic Tower ($50)</button>
+        <button onclick="upgradeTower()">Upgrade Tower ($100)</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
