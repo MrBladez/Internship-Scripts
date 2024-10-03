@@ -4,11 +4,13 @@ var MouseMulti = 1;
 var Mouse = 1;
 let resetList = [0, 0, 0];
 let prestigeGain = Math.round(resetList[0] ** (1/5))
-let resetCost = [10, 0, 0]
+let resetCost = [10, 1000, 0]
 let hasPrestiged = false;
 let autoClick = false;
 let PrestigeUpCost = 1;
 let prestigeMulti = 1;
+let hasRebirthed = false;
+let rebirthGain = Math.floor((resetList[1] ** (1/10)))
 function Start() {
 
   ButtonRemove("START");

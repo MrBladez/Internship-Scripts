@@ -15,7 +15,7 @@ function createPrestigeBtn()
 }
 function resetPrestige(resetIndex)
 {
-    if (resetList[resetIndex] > resetCost[0])
+    if (resetList[resetIndex] > resetCost[resetIndex])
     {
         for (let i=0 ; i < resetIndex+1; i++)
         {
@@ -36,10 +36,17 @@ function resetPrestige(resetIndex)
         resetList[1] += prestigeGain;
         hasPrestiged = true;
         autoClick = false;
-        while (document.getElementById("UpgradeButtons").lastElementChild.id != "prestigeReset")
+        while (document.getElementById("UpgradeButtons").lastElementChild.id != "prestigeReset" || document.getElementById("UpgradeButtons").firstElementChild.id != "prestigeReset")
         {
-            let button = document.getElementById("UpgradeButtons").lastElementChild.id;
-            ButtonRemove(button)
+            if(document.getElementById("UpgradeButtons").lastElementChild.id != "prestigeReset"){
+                let button = document.getElementById("UpgradeButtons").lastElementChild.id;
+                ButtonRemove(button)
+            }
+            if(document.getElementById("UpgradeButtons").firstElementChild.id != "prestigeReset"){
+                let button = document.getElementById("UpgradeButtons").firstElementChild.id;
+                ButtonRemove(button)
+            }
+            
         }
         addAutoUpgrade();
         let buttonMiner = document.getElementById("Miner");
@@ -58,7 +65,26 @@ function resetPrestige(resetIndex)
         ParagraphMouse.textContent = miceDescript;
         ParagraphMouse.id = "MouseDescript";
         buttonMouse.appendChild(ParagraphMouse);
+        addPrestigeBtn();
+        createRebirthBttn();
+        if (resetIndex > 0)
+        {
+            hasRebirthed = true;
+            ButtonRemove("rebirthReset");
+        }
         Update();
     }
-    
+}
+function createRebirthBttn(){
+    let Container = document.getElementById("UpgradeButtons");
+    let button = document.createElement("button");
+    button.innerHTML = `Reset all copper for ${rebirthGain} silver`;
+    button.id = "rebirthReset";
+    button.onclick = function() {
+        resetPrestige(1);
+    }
+    Container.appendChild(button);
+    setInterval(function () {
+        document.getElementById("rebirthReset").innerText = `Reset all copper for ${rebirthGain} silver`;
+    }, 10);
 }

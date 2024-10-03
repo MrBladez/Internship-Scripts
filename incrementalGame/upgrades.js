@@ -177,6 +177,12 @@ function upPrestige(){
         prestigeMulti *= 2;
         resetList[1] -= PrestigeUpCost;
         PrestigeUpCost *= 16;
-        document.getElementById("PrestigeUp").innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+        let button = document.getElementById("PrestigeUp");
+        button.innerHTML = `1 monitor for ${PrestigeUpCost} coins`;
+        let Paragraph = document.createElement("p");
+        Paragraph.textContent = "Each prestige upgrade doubles miner and mouse productivity";
+        Paragraph.id = "PrestigeDescript";
+        button.appendChild(Paragraph);
+        Update();
     }
 }
